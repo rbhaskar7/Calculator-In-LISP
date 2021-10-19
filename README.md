@@ -1,2 +1,2 @@
 # Calculator-In-LISP
-Multifunctional Calculator In LISP Programming Language
+Multi-functional Calculator In LISP Programming Language
