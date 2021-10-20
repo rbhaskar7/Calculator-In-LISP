@@ -9,26 +9,26 @@
 ;THIS FUNCTION CALCULATES A + B
 (defun ADDITION(A B)
 	(defvar result)
-	(setq result (+ A B)))														;SETS RESULT TO A + B
+	(setq result (+ A B)))			;SETS RESULT TO A + B
 
 ;THIS FUNCTION CALCULATES A - B
 (defun SUBTRACTION(A B)
 	(defvar result)
-	(setq result (- A B)))														;SETS RESULT TO A - B
+	(setq result (- A B)))			;SETS RESULT TO A - B
 
 ;THIS FUNCTION CALCULATES A * B
 (defun MULTIPLICATION(A B)
 	(defvar result)
-	(setq result (* A B)))														;SETS RESULT TO A * B
+	(setq result (* A B)))			;SETS RESULT TO A * B
 
 ;THIS FUNCTION CALCULATES A / B
 (defun DIVISION(A B)
 	(defvar result)
 	;WHEN B == 0 THEN DIVISION IS NOT POSSIBLE
 	(when (= B 0)
-		(format t "~%ERROR! CAN NOT DIVIDE BY ZERO!"))							;ERROR MESSAGE
+		(format t "~%ERROR! CAN NOT DIVIDE BY ZERO!"))			;ERROR MESSAGE
 
-	(setq result (float (/ A B))))												;SETS RESULT TO A / B
+	(setq result (float (/ A B))))		;SETS RESULT TO A / B
 
 ;THIS FUNCTION CALCULATES A MOD B
 (defun MODULUS(A B)
@@ -37,13 +37,13 @@
 	(when (= B 0)
 		(format t "~%ERROR! CAN NOT FIND REMAINDER WHEN DIVIDED BY ZERO!"))		;ERROR MESSAGE
 
-	(setq result (mod A B)))													;SETS RESULT TO REMAINDER(A, B)
+	(setq result (mod A B)))		;SETS RESULT TO REMAINDER(A, B)
 
 ;THIS FUNCTION CALCULATES A RAISED TO POWER B
 (defun POWER(A B)
 	(defvar result)
-	(if (= B 0) 1 																;IF B == 0 THEN SET RESULT AS 0
-		(setq result (* A (POWER A (- B 1))))))									;RECURSIVE FUNCTION CALL, SETS RESULT AS A ^ B
+	(if (= B 0) 1 		;IF B == 0 THEN SET RESULT AS 0
+		(setq result (* A (POWER A (- B 1))))))			;RECURSIVE FUNCTION CALL, SETS RESULT AS A ^ B
 
 ;THIS FUNCTION TAKES INPUT, CALLS THE ABOVE FUNCTIONS AND DISPLAYS OUTPUT	
 (defun CALCULATOR()
