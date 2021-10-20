@@ -1,3 +1,5 @@
+;FORK AND RUN ON YOUR RESPECTIVE SYSTEMS TO GET THE IDEA OF THE LAYOUT...AFTER THAT YOU CAN MODIFY AS YOU MAY SEEM FIT.
+
 (format t "           *********************************************************~%")
 (format t "          |               ---CALCULATOR IN LISP---                  |~%")
 (format t "          |---AUTHOR: RITESH BHASKAR, IIIT KALYANI, CSE/19062/489---|~%")
